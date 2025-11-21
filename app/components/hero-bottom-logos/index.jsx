@@ -10,10 +10,10 @@ const HeroBottomLogos = () => {
     return (
         <div className="relative bg-secondary">
             <div className="container py-10">
-                <div className="flex items-center justify-between flex-wrap gap-6">
+                <div className="flex items-center justify-between flex-wrap gap-3">
                     {/* Left side - Text */}
                     <div className="text-white text-3xl md:text-4xl font-childhood">
-                        <div>Publish Your Children's Book</div>
+                        <div>Publish Your Children&apos;s Book</div>
                         <div>Anywhere Without The Hassle</div>
                     </div>
 

@@ -10,11 +10,11 @@ const HeroSection = () => {
                 <div className="absolute top-0 left-0 w-[30%]">
                     <Image src="/images/topleftdesign.png" alt="Hero Section Background" width={1000} height={1000} />
                 </div>
-                <div className="absolute top-[15%] right-0 w-[320px] z-20">
+                <div className="absolute top-[15%] right-0 w-[300px] z-20">
                     <Image src="/images/paperplane.png" alt="Hero Section Background" width={1000} height={1000} />
                 </div>
-                <div className="absolute bottom-0 right-0 w-[40%]">
-                    <Image className="w-full" src="/images/bottomrightdesign.png" alt="Hero Section Background" width={1000} height={1000} />
+                <div className="absolute bottom-0 right-0 w-[55%] h-[90%]">
+                    <Image className="w-full h-full" src="/images/22.png" alt="Hero Section Background" width={1000} height={1000} />
                 </div>
                 <div className="absolute top-[10%] right-0 w-[80px]">
                     <Image src="/images/dottedline.png" alt="Hero Section Background" width={1000} height={1000} />

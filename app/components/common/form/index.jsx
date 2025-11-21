@@ -14,7 +14,7 @@ const ContactForm = () => {
                 <Image src="/images/new.png" alt="Form Background" width={1000} height={1000} />
             </div>
             {/* White form container */}
-            <div className="relative bg-white rounded-3xl p-8 shadow-2xl border-2 border-[#38216E] overflow-visible">
+            <div className="relative bg-white rounded-3xl p-6 shadow-2xl border-2 border-[#38216E] overflow-visible">
                 {/* Form content */}
                 <div className="relative z-10">
                     {/* Header */}
@@ -85,7 +85,7 @@ const ContactForm = () => {
                             <textarea
                                 id="message"
                                 name="message"
-                                rows="4"
+                                rows="1"
                                 placeholder="Type here"
                                 className="-mt-[16px] bg-[#F3F6FF] text-[#38216E] w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
                             ></textarea>

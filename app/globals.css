@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #E2912A;
-  --foreground: #E2912A;
+  --background: #e2912a;
+  --foreground: #e2912a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-primary: #38216E;
-  --color-secondary: #2D4DB1;
+  --color-primary: #38216e;
+  --color-secondary: #2d4db1;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-childhood: var(--font-childhood);
@@ -39,6 +39,20 @@ body {
     padding-right: 1rem;
   }
 
+  .testimonail-card {
+    /* background: #41267808; */
+    background: linear-gradient(
+      90deg,
+      rgba(65, 38, 120, 0.54) 0%,
+      rgba(65, 38, 120, 0.79) 100%
+    );
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    /* -webkit-backdrop-filter: blur(5px); */
+    border: 2px solid #41267808;
+  }
+
   @media (min-width: 640px) {
     .container {
       max-width: 640px;
@@ -59,13 +73,13 @@ body {
 
   @media (min-width: 1280px) {
     .container {
-      max-width: 1280px;
+      max-width: 1100px;
     }
   }
 
   @media (min-width: 1536px) {
     .container {
-      max-width: 1536px;
+      max-width: 1250px;
     }
   }
 

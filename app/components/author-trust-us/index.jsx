@@ -51,7 +51,7 @@ const AuthorTrustUs = () => {
             <div className="container relative z-10">
                 <div className="font-childhood text-white text-[60px] text-center">Why Authors Trust Us for Children’s Book Publishing</div>
                 <div className="text-white text-[16px] text-center px-[100px]">At Hollywood Books Publisher, we craft children’s books that truly stand out—with engaging storytelling, vibrant illustrations, and seamless publishing support. From editing to design, we handle everything to bring your vision to life effortlessly.</div>
-                <div className="grid grid-cols-12 gap-4 pt-10">
+                <div className="grid grid-cols-12 gap-2 pt-10">
                     {authorDetails.map((item, index) => (
                         <div className="col-span-3 shadow-xl/20 bg-white rounded-2xl p-8 border-2 border-[#F2B385]" key={index}>
                             <div className="w-[60px] mx-auto mb-4">
