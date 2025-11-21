@@ -39,8 +39,11 @@ const AuthorTrustUs = () => {
 
     return (
         <div className="relative py-10">
-            <div className="absolute top-0 left-0 w-[100%] h-[100%]">
-                <Image className="w-full h-full" src="/images/authortrustbk.png" alt="Hero Section Background" width={1000} height={1000} />
+            <div className="absolute top-0 left-0 w-[180px] h-[100%]">
+                <Image className="w-full h-full" src="/images/leftcover.png" alt="Hero Section Background" width={1000} height={1000} />
+            </div>
+            <div className="absolute top-0 right-0 w-[180px] h-[100%]">
+                <Image className="w-full h-full" src="/images/rightcover.png" alt="Hero Section Background" width={1000} height={1000} />
             </div>
             <div className="absolute bottom-0 right-0 w-[300px]">
                 <Image src="/images/girlreadingbook.png" alt="Hero Section Background" width={1000} height={1000} />
@@ -51,6 +54,9 @@ const AuthorTrustUs = () => {
                 <div className="grid grid-cols-12 gap-4 pt-10">
                     {authorDetails.map((item, index) => (
                         <div className="col-span-3 shadow-xl/20 bg-white rounded-2xl p-8 border-2 border-[#F2B385]" key={index}>
+                            <div className="w-[60px] mx-auto mb-4">
+                                <Image src="/images/book.png" alt="Hero Section Background" width={1000} height={1000} />
+                            </div>
                             <div className="pb-2 text-black font-bold text-center">{item.name}</div>
                             <div className="text-black text-center">{item.desc}</div>
                         </div>
