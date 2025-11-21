@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +11,18 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const childHood = localFont({
+  src: "../public/fonts/Child Hood.otf",
+  variable: "--font-childhood",
+  display: "swap",
+});
+
+const inter = localFont({
+  src: "../public/fonts/Inter_18pt-Black.ttf",
+  variable: "--font-inter",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +38,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${childHood.variable} ${inter.variable} antialiased`}
       >
-        {children}
+        {children}  
       </body>
     </html>
   );
