@@ -39,6 +39,12 @@ const AuthorTrustUs = () => {
 
     return (
         <div className="relative py-10">
+            <div className="absolute z-10 top-[5%] left-0 w-[220px]">
+                <Image className="w-full h-full" src="/images/authortopbook.png" alt="Hero Section Background" width={1000} height={1000} />
+            </div>
+            <div className="absolute z-10 bottom-[5%] left-0 w-[280px]">
+                <Image className="w-full h-full" src="/images/authorbottombook.png" alt="Hero Section Background" width={1000} height={1000} />
+            </div>
             <div className="absolute top-0 left-0 w-[180px] h-[100%]">
                 <Image className="w-full h-full" src="/images/leftcover.png" alt="Hero Section Background" width={1000} height={1000} />
             </div>
@@ -53,8 +59,8 @@ const AuthorTrustUs = () => {
                 <div className="text-white text-[16px] text-center px-[100px]">At Hollywood Books Publisher, we craft children’s books that truly stand out—with engaging storytelling, vibrant illustrations, and seamless publishing support. From editing to design, we handle everything to bring your vision to life effortlessly.</div>
                 <div className="grid grid-cols-12 gap-2 pt-10">
                     {authorDetails.map((item, index) => (
-                        <div className="col-span-3 shadow-xl/20 bg-white rounded-2xl p-8 border-2 border-[#F2B385]" key={index}>
-                            <div className="w-[60px] mx-auto mb-4">
+                        <div className="col-span-3 shadow-xl/20 bg-white rounded-2xl p-8 border-2 border-[#F2B385] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-orange-400/50 hover:-translate-y-2 hover:border-orange-500 cursor-pointer" key={index}>
+                            <div className="w-[60px] mx-auto mb-4 transition-transform duration-300 ease-in-out hover:scale-110 hover:rotate-3">
                                 <Image src="/images/book.png" alt="Hero Section Background" width={1000} height={1000} />
                             </div>
                             <div className="pb-2 text-black font-bold text-center">{item.name}</div>
