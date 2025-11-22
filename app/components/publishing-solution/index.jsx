@@ -31,14 +31,6 @@ const PublishingSolution = () => {
 
   return (
     <div className="relative pt-10 pb-[120px]">
-      <div className="absolute top-[55%] left-0 w-[350px] transform scale-x-[-1] z-10">
-        <Image
-          src="/images/paperplane.png"
-          alt="Hero Section Background"
-          width={1000}
-          height={1000}
-        />
-      </div>
       <div className="absolute top-[11%] right-0 w-[220px]">
         <Image
           src="/images/paperplane.png"
@@ -92,10 +84,10 @@ const PublishingSolution = () => {
         <div className="grid grid-cols-12 gap-2 pt-10">
           {successStories.map((item, index) => (
             <div
-              className="col-span-4 shadow-xl/20 bg-white rounded-2xl p-8 border-2 border-[#F2B385]"
+              className="col-span-4 shadow-xl/20 bg-white rounded-2xl p-8 border-2 border-[#F2B385] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-orange-400/50 hover:-translate-y-2 cursor-pointer"
               key={index}
             >
-              <div className="w-[60px] mx-auto mb-4">
+              <div className="w-[60px] mx-auto mb-4 transition-transform duration-300 ease-in-out hover:scale-110 hover:rotate-3">
                 <Image
                   src="/images/book.png"
                   alt="Hero Section Background"

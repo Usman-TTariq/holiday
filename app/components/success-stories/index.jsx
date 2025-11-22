@@ -93,7 +93,15 @@ const SuccessStories = () => {
         </div>
       </div>
       <Swiper
-        // modules={[Navigation, Pagination]}
+        modules={[Autoplay]}
+        autoplay={{
+          delay: 100,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: false,
+        }}
+        loop={true}
+        speed={2500}
+        grabCursor={true}
         navigation
         pagination={{ clickable: true }}
         spaceBetween={20}
@@ -104,7 +112,7 @@ const SuccessStories = () => {
           1024: { slidesPerView: 4 },
         }}
       >
-        {testimonials.map((testimonial, index) => (
+        {duplicatedTestimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
             <TestimonialCard name={testimonial.name} desc={testimonial.desc} image={testimonial.image} />
           </SwiperSlide>
