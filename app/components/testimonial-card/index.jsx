@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function TestimonialCard({ name, desc, image }) {
   return (
-    <div className="w-full rounded-2xl px-4 py-8 testimonail-card min-h-[340px] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50 cursor-pointer">
+    <div className="w-full rounded-2xl px-4 py-8 testimonail-card min-h-[350px] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50 cursor-pointer">
       <div className="p-0 flex flex-col gap-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -32,7 +32,7 @@ export default function TestimonialCard({ name, desc, image }) {
           </div>
         </div>
 
-        <p className="text-sm text-white/90 leading-relaxed">
+        <p className="text-sm text-white/90 leading-relaxed max-sm:text-[12px]">
           {desc}
         </p>
       </div>

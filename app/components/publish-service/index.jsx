@@ -39,13 +39,13 @@ const PublicService = () => {
             alt="Publish Service Background"
             width={1000}
             height={1000}
-          />
+          />  
         </div>
-        <div className="relative z-10 pl-[40px] pt-12 pr-[150px] max-xl:pt-6 max-xl:pr-[100px] max-xl:pl-[10px] max-lg:mx-[50px] max-lg:pl-0 max-lg:pr-0 max-lg:text-center max-md:mx-[10px]">
+        <div className="relative max-sm:px-2 z-10 pl-[40px] pt-12 2xl:pr-[150px] xl:pr-0 max-xl:pt-6 max-xl:pr-[100px] max-xl:pl-[10px] max-lg:mx-[50px] max-lg:pl-0 max-lg:pr-0 max-lg:text-center max-md:mx-[10px]">
           <div className="font-childhood text-white text-[65px] max-xl:text-[50px] max-md:text-[35px] leading-[1] pr-16 max-xl:pr-0">
             Publish the Children’s Book You’ve Always Imagined
           </div>
-          <div className="text-white py-4 pr-[100px] max-xl:pr-0 max-xl:text-[14px]">
+          <div className="text-white py-4 pr-[100px] max-xl:pr-0 max-xl:text-[14px] max-sm:text-[12px]">
             Give young readers a story they’ll cherish with Hollywood Books
             Publisher’s premium children’s book publishing services. We help
             authors transform their ideas into beautifully crafted books that
@@ -58,23 +58,23 @@ const PublicService = () => {
             handle it all for you. Your book won’t just be ready for young
             readers; it will stand out, shine, and make a lasting impact.
           </div>
-          <div className="text-white max-xl:text-[14px]">
+          <div className="text-white max-xl:text-[14px] max-sm:text-[12px]">
             Get started today & enjoy:
           </div>
-          <div className="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 lg:grid-cols-2 max-lg:gap-2">
+          <div className="pt-4 max-sm:pt-2 grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 lg:grid-cols-2 max-lg:gap-2 max-sm:gap-y-1">
             {services.map((item) => (
               <div
                 key={item}
                 className="flex items-start max-lg:justify-center"
               >
                 <span className="mr-2 text-white text-[16px]">•</span>
-                <span className="text-white text-[16px] max-xl:text-[14px]">
+                <span className="text-white text-[16px] max-xl:text-[14px] max-sm:text-[12px] font-semibold">
                   {item}
                 </span>
               </div>
             ))}
           </div>
-          <div className="pt-10 max-xl:pt-6">
+          <div className="pt-10 max-sm:pt-2 max-xl:pt-6">
             <Button
               text="Let Us Publish My Children’s Book"
               className="text-white bg-secondary font-inter max-lg:mx-auto"
