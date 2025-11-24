@@ -1,12 +1,11 @@
 "use client";
 import Image from "next/image";
-import React from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Navigation, Autoplay } from "swiper/modules";
+import 'swiper/css/navigation';
 
 const Portfolio = () => {
-
   const images = [
     "/images/p1.png",
     "/images/p2.png",
@@ -18,6 +17,9 @@ const Portfolio = () => {
     "/images/p3.png",
     "/images/p4.png",
   ];
+
+  // Duplicate images for seamless loop
+  const duplicatedImages = [...images, ...images, ...images];
 
   return (
     <div className="relative bg-[#2D4DB1] py-10">
@@ -70,14 +72,19 @@ const Portfolio = () => {
       </div>
       <div className="portfolio pt-10 relative z-20">
         <Swiper
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
           navigation
           centeredSlides={true}
           spaceBetween={30}
-          slidesPerView={5}          // shows 4 main items
+          slidesPerView={5} // shows 4 main items
           loop={true}
-          // grabCursor={true}
-
+          autoplay={{
+            delay: 100,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: false,
+          }}
+          speed={2500}
+          grabCursor={true}
           // responsive
           breakpoints={{
             320: { slidesPerView: 1.3, spaceBetween: 15 },
@@ -98,7 +105,7 @@ const Portfolio = () => {
             if (next) next.classList.add("two-active");
           }}
         >
-          {images.map((src, i) => (
+          {duplicatedImages.map((src, i) => (
             <SwiperSlide key={i}>
               <img className="book-img two-active" src={src} alt="book" />
             </SwiperSlide>

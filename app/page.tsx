@@ -21,14 +21,14 @@ export default function Home() {
       <PublicService />
       <HireUs />
       <AuthorTrustUs />
-      {/* <Portfolio /> */}
-      {/* <PublishYourChildrenBook /> */}
-      {/* <PublishingSolution /> */}
-      {/* <SuccessStories /> */}
-      {/* <Questions /> */}
-      {/* <BookYourself /> */}
-      {/* <HeroBottomLogos text={false} /> */}
-      {/* <Footer /> */}
+      <Portfolio />
+      <PublishYourChildrenBook />
+      <PublishingSolution />
+      <SuccessStories />
+      <Questions />
+      <BookYourself />
+      <HeroBottomLogos text={false} />
+      <Footer />
     </>
   );
 }

@@ -54,7 +54,7 @@ const HireUs = () => {
   }, []);
 
   return (
-    <div className="cloud-section relative py-10 bg-white h-[720px] max-xl:h-[580px] max-lg:h-[500px] max-md:h-[430px] max-sm:h-[300px]">
+    <div className="cloud-section relative py-10 bg-white h-[720px] max-xl:h-[580px] max-lg:h-[500px] max-md:h-[430px] max-sm:min-h-[400px]">
       <div className="absolute top-[5%] left-0 w-[150px] max-lg:w-[100px] max-sm:w-[50px]">
         <Image
           src="/images/animationleftbook.png"

@@ -8,8 +8,8 @@ const HeroBottomLogos = ({ text }) => {
     <div className="relative bg-secondary">
       <div className="container py-6 max-sm:py-4">
         <div
-          className={`flex items-center flex-wrap max-md:justify-around  ${
-            text ? "justify-between" : "justify-center gap-16"
+          className={`flex items-center flex-wrap  ${
+            text ? "justify-between max-md:justify-around" : "justify-center gap-16 max-sm:gap-6"
           }`}
         >
           {text && (
