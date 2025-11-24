@@ -89,7 +89,7 @@ const AuthorTrustUs = () => {
         <div className="font-childhood text-white text-[60px] max-xl:text-[50px] max-sm:text-[35px] max-lg:leading-[1] max-lg:pb-4 text-center max-sm:px-6">
           Why Authors Trust Us for Children’s Book Publishing
         </div>
-        <div className="text-white text-[16px] max-sm:text-[12px] text-center px-[100px] max-md:px-0 max-md:pb-4 max-sm:px-6">
+        <div className="text-white text-[16px] max-sm:text-[12px] text-center px-[100px] max-md:px-0 max-md:pb-4 max-sm:px-2">
           At Hollywood Books Publisher, we craft children’s books that truly
           stand out—with engaging storytelling, vibrant illustrations, and
           seamless publishing support. From editing to design, we handle
@@ -134,7 +134,7 @@ const AuthorTrustUs = () => {
             {authorDetails.map((item, index) => (
               <SwiperSlide key={index} className="">
                 <div
-                  className="shadow-xl/20 bg-white rounded-2xl p-8 max-md:p-6 border-2 border-[#F2B385]"
+                  className="shadow-xl/20 bg-white rounded-2xl p-8 max-md:p-6 border-2 border-[#F2B385] max-sm:min-h-[220px]"
                   key={index}
                 >
                   <div className="w-[60px] mx-auto mb-4">
@@ -148,7 +148,7 @@ const AuthorTrustUs = () => {
                   <div className="pb-2 text-black font-bold text-center">
                     {item.name}
                   </div>
-                  <div className="text-black text-center">{item.desc}</div>
+                  <div className="text-black text-center max-sm:text-[12px]">{item.desc}</div>
                 </div>
               </SwiperSlide>
             ))}

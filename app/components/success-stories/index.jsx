@@ -51,7 +51,7 @@ const SuccessStories = () => {
   const duplicatedTestimonials = [...testimonials, ...testimonials];
 
   return (
-    <div className="relative pt-10 pb-20 bg-[#F3F3F3]">
+    <div className="relative pt-10 pb-20 bg-[#F3F3F3] max-sm:pb-10">
       <div className="absolute top-0 left-0 w-[10%]">
         <Image
           src="/images/publishtop.png"
@@ -60,7 +60,7 @@ const SuccessStories = () => {
           height={1000}
         />
       </div>
-      <div className="absolute bottom-[5%] left-[50%] translate-x-[-50%] w-[15%]">
+      <div className="absolute bottom-[5%] left-[50%] translate-x-[-50%] w-[15%] max-sm:w-[35%] ">
         <Image
           src="/images/successpaper.png"
           alt="Publish Your Children’s Book"
@@ -68,7 +68,7 @@ const SuccessStories = () => {
           height={1000}
         />
       </div>
-      <div className="absolute bottom-0 left-[5%] w-[12%]">
+      <div className="absolute bottom-0 left-[5%] w-[12%] max-sm:w-[25%]">
         <Image
           src="/images/publishbookface.png"
           alt="Publish Your Children’s Book"
@@ -84,7 +84,7 @@ const SuccessStories = () => {
           height={1000}
         />
       </div>
-      <div className="absolute bottom-0 right-0 w-[12%]">
+      <div className="absolute bottom-0 right-0 w-[12%] max-sm:w-[25%]">
         <Image
           src="/images/publisherbottombookface.png"
           alt="Publish Your Children’s Book"
@@ -93,7 +93,7 @@ const SuccessStories = () => {
         />
       </div>
       <div className="container">
-        <div className="pb-6 font-childhood text-black text-[60px] text-center">
+        <div className="pb-6 font-childhood text-black text-[60px] text-center max-lg:text-[50px] max-sm:text-[30px] max-lg:leading-[1]">
           Success Stories from Our Authors
         </div>
       </div>
@@ -107,14 +107,15 @@ const SuccessStories = () => {
         loop={true}
         speed={2500}
         grabCursor={true}
+        centeredSlides={true}
         // navigation
         // pagination={{ clickable: true }}
         spaceBetween={20}
-        slidesPerView={1}
+        slidesPerView={1.3}
         breakpoints={{
           640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
-          1024: { slidesPerView: 4 },
+          1024: { slidesPerView: 3.2 },
         }}
       >
         {duplicatedTestimonials.map((testimonial, index) => (
