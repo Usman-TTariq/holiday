@@ -3,7 +3,7 @@ const Button = ({ text, leftIcon, className, ...props }) => {
     return (
         <button 
             {...props} 
-            className={`flex items-center gap-2 bg-primary text-white px-8 py-3 font-semibold rounded-full cursor-pointer ${className}`}
+            className={`flex items-center gap-2 bg-primary text-white px-8 py-3 font-semibold rounded-full cursor-pointer max-sm:px-3 max-sm:text-[12px] ${className}`}
         >
             {leftIcon && leftIcon}
             <div className="text-nowrap">{text}</div>
