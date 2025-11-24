@@ -7,8 +7,9 @@ const HeroSection = () => {
   return (
     <>
       <section className="relative pt-[200px] pb-20 max-sm:pb-10 m-0 max-lg:pt-[170px] max-sm:pt-[120px] overflow-hidden">
-        <div className="absolute top-0 left-0 w-[30%] max-md:w-[50%] max-sm:w-[60%]">
+        <div className="absolute top-0 left-0 w-[30%] max-md:w-[50%] max-sm:w-[55%] max-sm:h-[20%]">
           <Image
+          className="h-full"
             src="/images/topleftdesign.png"
             alt="Hero Section Background"
             width={1000}
@@ -64,7 +65,7 @@ const HeroSection = () => {
                 className="text-[70px] max-2xl:text-[70px] max-xl:text-[50px] max-sm:text-[46px] max-lg:text-center leading-[1]"
                 text="Publish A Children’s Book Readers Will Love"
               />
-              <div className="text-white text-[22px] max-2xl:text-[18px] max-sm:text-[12px] pr-10 py-4 max-lg:text-center max-lg:pr-0">
+              <div className="text-white text-[22px] max-2xl:text-[18px] max-sm:text-[12px] pr-10 py-4 max-lg:py-2 max-lg:text-center max-lg:pr-0">
                 Have a beautiful story waiting to be told?
                 <br />
                 At Hollywood Books Publisher, we turn your ideas into magical
@@ -75,7 +76,7 @@ const HeroSection = () => {
                 What You’ll Get:
               </div>
               <div>
-                <ul className="text-white text-md list-disc ml-[20px] text-[22px] max-2xl:text-[18px] max-sm:text-[12px] max-lg:flex justify-center flex-wrap gap-8 max-sm:gap-4 max-sm:mr-[20px]">
+                <ul className="text-white text-md list-disc ml-[20px] text-[22px] max-2xl:text-[18px] max-sm:text-[12px] max-lg:flex justify-center flex-wrap gap-8 max-sm:gap-4 max-sm:mr-[20px] max-sm:gap-x-10 max-sm:gap-y-1">
                   <li>24/7 Support</li>
                   <li>Immediate Publishing</li>
                   <li>Free Book Audit</li>

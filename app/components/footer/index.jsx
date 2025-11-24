@@ -3,8 +3,8 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <div className="bg-[#412678] relative py-16">
-        <div className="absolute top-0 left-0 w-[38%] h-full opacity-50">
+      <div className="bg-[#412678] relative py-16 max-sm:pb-6">
+        <div className="absolute top-0 left-0 w-[38%] max-sm:w-[60%] h-full max-sm:h-auto opacity-50">
           <Image
             className="w-full h-full"
             src="/images/footerleft.png"

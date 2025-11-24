@@ -54,7 +54,7 @@ const HireUs = () => {
   }, []);
 
   return (
-    <div className="cloud-section relative py-10 bg-white h-[720px] max-xl:h-[580px] max-lg:h-[500px] max-md:h-[430px] max-sm:min-h-[400px]">
+    <div className="cloud-section relative py-10 bg-white h-[720px] max-xl:h-[580px] max-lg:h-[500px] max-md:h-[430px] max-sm:h-[380px]">
       <div className="absolute top-[5%] left-0 w-[150px] max-lg:w-[100px] max-sm:w-[50px]">
         <Image
           src="/images/animationleftbook.png"
@@ -87,13 +87,13 @@ const HireUs = () => {
             ref={secondRef}
             className="cloud-image mx-auto"
             src="/images/animation2.png"
-            alt="Hero Section Background"
+            alt="Hero Section Background  "
             width={1000}
             height={1000}
           />
           <div
             ref={textRef}
-            className="absolute z-20 -mt-[6%] max-lg:-mt-[10%] top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 font-childhood w-full text-white text-center text-[54px] max-xl:text-[40px] max-lg:text-[22px] max-sm:text-[16px] leading-[1]"
+            className="absolute z-20 top-[35%] max-2xl:top-[60%] max-xl:top-[35%] max-lg:top-[60%] left-[50%] -translate-x-1/2 -translate-y-1/2 font-childhood w-full text-white text-center text-[54px] max-xl:text-[40px] max-lg:text-[22px] max-sm:text-[16px] leading-[1]"
           >
             Ready to Publish a Children’s Book?
             <br />
@@ -125,5 +125,5 @@ const HireUs = () => {
     </div>
   );
 };
-
+// -mt-[6%] max-lg:-mt-[10%]
 export default HireUs;

@@ -163,6 +163,13 @@ body {
     padding: 40px 0;
   } */
 
+   @media (max-width: 768px) {
+    .accordians-questions:nth-child(even) {
+      margin: 20px 0px;
+      transform: rotate(2deg) translateY(0px);
+    }
+  }
+
   @media (min-width: 640px) {
     .container {
       max-width: 540px;
@@ -192,6 +199,8 @@ body {
       max-width: 1320px;
     }
   }
+
+  
 
   .container-fluid {
     width: 100%;

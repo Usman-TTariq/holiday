@@ -20,7 +20,7 @@ const Portfolio = () => {
 
   return (
     <div className="relative bg-[#2D4DB1] py-10">
-      <div className="absolute top-[5%] left-0 w-[120px] z-10">
+      <div className="absolute top-[5%] left-0 w-[120px] z-10 max-lg:w-[80px] max-sm:w-[40px]">
         <Image
           className="w-full"
           src="/images/portfolioleftbook.png"
@@ -29,7 +29,7 @@ const Portfolio = () => {
           height={1000}
         />
       </div>
-      <div className="absolute bottom-0 right-0 w-[480px]">
+      <div className="absolute bottom-0 right-0 w-[480px] max-lg:w-[350px] max-sm:w-[200px]">
         <Image
           className="w-full h-full"
           src="/images/rainbow.png"
@@ -38,25 +38,7 @@ const Portfolio = () => {
           height={1000}
         />
       </div>
-      <div className="absolute top-[5%] left-0 w-[120px] z-10">
-        <Image
-          className="w-full"
-          src="/images/portfolioleftbook.png"
-          alt="Hero Section Background"
-          width={1000}
-          height={1000}
-        />
-      </div>
-      <div className="absolute bottom-0 right-0 w-[480px]">
-        <Image
-          className="w-full h-full"
-          src="/images/rainbow.png"
-          alt="Hero Section Background"
-          width={1000}
-          height={1000}
-        />
-      </div>
-      <div className="absolute top-0 right-0 w-[180px] h-full">
+      <div className="absolute top-0 right-0 w-[180px] h-full max-md:w-[90px] max-sm:w-[50px]">
         <Image
           className="w-full h-full"
           src="/images/portfolioright.png"
@@ -65,7 +47,7 @@ const Portfolio = () => {
           height={1000}
         />
       </div>
-      <div className="absolute top-0 left-0 w-[175px] h-full">
+      <div className="absolute top-0 left-0 w-[175px] h-full max-md:w-[86px] max-sm:w-[50px]">
         <Image
           className="w-full h-full"
           src="/images/portfolioleft.png"
@@ -75,22 +57,22 @@ const Portfolio = () => {
         />
       </div>
       <div className="container">
-        <div className="font-childhood text-white text-[60px] text-center">
+        <div className="font-childhood text-white text-[60px] max-lg:text-[50px] max-sm:text-[30px] max-lg:leading-[1] max-lg:pb-4 text-center">
           Explore Our Portfolio of Recent Children’s Books
         </div>
-        <div className="text-white text-[16px] text-center px-[100px]">
+        <div className="text-white text-[16px] max-sm:text-[12px] text-center px-[100px] max-lg:px-0">
           Explore our portfolio to see the children’s books we’ve brought to
           life! From heartwarming tales to thrilling adventures, our work
           highlights the creativity, care, and expertise we bring to every
           project.
         </div>
       </div>
-      <div className="portfolio pt-10 relative z-20">
+      <div className="portfolio max-sm:pt-4 relative z-20 pt-4">
         <Swiper
           modules={[Navigation, Autoplay]}
           navigation
           centeredSlides={true}
-          spaceBetween={30}
+          spaceBetween={5}
           slidesPerView={5} // shows 4 main items
           loop={true}
           autoplay={{
