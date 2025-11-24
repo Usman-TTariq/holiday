@@ -41,8 +41,8 @@ const Questions = () => {
   };
 
   return (
-    <div className="bg-white relative py-20 overflow-hidden">
-      <div className="absolute top-0 left-0 w-[120px]">
+    <div className="bg-white relative py-20 overflow-hidden max-sm:pt-6">
+      <div className="absolute top-0 left-0 w-[120px] max-sm:w-[40px] max-sm:top-[15%]">
         <Image
           src="/images/learneverythingbook.png"
           alt="Hero Section Background"
@@ -50,7 +50,7 @@ const Questions = () => {
           height={1000}
         />
       </div>
-      <div className="absolute bottom-0 right-0 w-[150px]">
+      <div className="absolute bottom-0 max-sm:bottom-[10%] right-0 w-[150px] max-sm:w-[60px]">
         <Image
           src="/images/learnbottombook.png"
           alt="Hero Section Background"
@@ -58,10 +58,10 @@ const Questions = () => {
           height={1000}
         />
       </div>
-      <div className="container">
+      <div className="container z-10 relative">
         <div className="grid grid-cols-12">
-          <div className="col-span-8 col-start-3">
-            <div className="font-childhood text-black text-[60px] text-center leading-[1] mb-4">
+          <div className="col-span-8 max-sm:col-span-12 col-start-3">
+            <div className="font-childhood text-black text-[60px] text-center leading-[1] mb-4 max-lg:text-[50px] max-sm:text-[28px]">
               Learn Everything About Our Children&apos;s Book Publishing
               Services Here
             </div>
@@ -70,11 +70,11 @@ const Questions = () => {
       </div>
 
       {/* Accordion Section with Diagonal Bars */}
-      <div className="relative py-6">
+      <div className="relative py-6 max-sm:pt-0">
         {/* Subtitle Text Above Accordion */}
         <div className="container relative z-10 mb-12">
           <div className="text-center">
-            <p className="text-black text-[16px] md:text-[18px] font-inter">
+            <p className="text-black text-[16px] md:text-[18px] font-inter max-sm:text-[12px]">
               Still Curious? Get Answers Here, Or Contact Us For More
               Information.
             </p>
@@ -98,7 +98,7 @@ const Questions = () => {
                     onClick={() => toggleQuestion(index)}
                     className="w-full bg-[#38216e] text-white p-2 rounded-xl flex items-center justify-between hover:bg-[#38216e]/90 transition-all duration-300"
                   >
-                    <div className="flex items-center gap-4 flex-1 min-w-0">
+                    <div className="flex items-center gap-4 flex-1 min-w-0 max-sm:gap-1">
                       <div>
                         <Image
                           src="/images/accordianbullet.png"
@@ -107,7 +107,7 @@ const Questions = () => {
                           alt="star"
                         />
                       </div>
-                      <span className="text-left font-inter text-[14px] md:text-[16px] font-medium break-words">
+                      <span className="text-left font-inter text-[14px] max-sm:text-[10px] font-medium break-words">
                         {questionText}
                       </span>
                     </div>
@@ -137,7 +137,7 @@ const Questions = () => {
                     }`}
                   >
                     <div className="bg-gray-50 px-6 py-4 rounded-b-xl border-t border-gray-200">
-                      <p className="text-gray-700 text-[15px] md:text-[16px] leading-relaxed">
+                      <p className="text-gray-700 text-[15px] md:text-[16px] leading-relaxed max-sm:text-[10px]">
                         {item.answer}
                       </p>
                     </div>
